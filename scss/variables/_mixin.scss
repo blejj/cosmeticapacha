@@ -1,0 +1,7 @@
+@mixin estiloH1 ($size){
+    font-size: $size;
+    padding: 10px;
+    color: $RosaViejo;
+    font-weight: bold;
+    text-align: center;
+}

@@ -1,0 +1,107 @@
+//FontFamily
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@300;600;700&family=Montserrat:wght@300;600;900&display=swap');
+//font-family: 'Hind', sans-serif; font-family: 'Montserrat', sans-serif;
+
+//Reseteo
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+//Header
+header {
+    nav {
+        background-image: linear-gradient(to right, #e9e7da 70%, white);
+    }
+
+    img {
+        width: 150px;
+        padding: 5px;
+    }
+
+    .nav-link {
+        color: #cb997e;
+
+        &:hover {
+            color: $RosaViejo;
+            font-weight: bold;
+        }
+    }
+
+}
+
+
+//Footer 
+.footer {
+    background-color: #e9e7da;
+    background-color: black;
+    color: #a4755b;
+    color: rgb(255, 210, 204);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+        "footer__envios footer__mediosPago footer__sitioSeguro footer__muestras"
+        "footer__rrss footer__rrss footer__copyright footer__copyright ";
+
+    h3 {
+        text-align: center;
+        font-size: 1rem;
+        font-weight: 200;
+        margin: 20px auto;
+    }
+
+
+    .footer__rrss {
+        grid-area: footer__rrss;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        i {
+            color: rgb(85, 85, 85);
+            color: $RosaViejo;
+            margin: 10px;
+            font-size: 2.5rem;
+
+            &:hover {
+                color: white;
+                font-weight: bold;
+                font-size: 3rem;
+            }
+        }
+    }
+
+    .footer__copyright {
+        grid-area: footer__copyright;
+        color: rgb(85, 85, 85);
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        h4 {
+            font-size: 15px;
+            font-weight: 500;
+        }
+    }
+
+}
+
+
+// Tamaño Mediano
+@media(max-width: 740px) {
+    .footer {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+            "footer__envios"
+            "footer__mediosPago"
+            "footer__sitioSeguro"
+            "footer__muestras"
+            "footer__rrss"
+            "footer__copyright";
+    }
+}

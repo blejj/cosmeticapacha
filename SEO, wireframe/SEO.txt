@@ -1,0 +1,34 @@
+Detalle de acciones de SEO implementadas en el sitio:
+
+1) Imagenes: 
+    a) Se utilizaron imagenes hosteadas en internet para disminuir el peso del proyecto.
+    b) Se subieron imagenes a Cloudinary de banners promocionales del index y logo elaborados en Canva y luego se incorporaron al proyecto para disminuir el peso general.
+
+2) Títulos : Se ajustó el <title> en el head de cada HTML.
+
+3) Keywords: Se incroporó el <meta name> de keywords y descripción a cada html.
+    a) Index
+    <meta name="keywords" content="pachamama, cosmética, natural, vegana, ecológica, shampoo, acondicionador, solido, reciclable">
+    <meta name="description" content="Pachamama, cosmética natural, vegana y ecológica">
+    b) Productos
+    <meta name="keywords" content="pachamama, vegano, ecológica, shampoo, acondicionador, solido, jabón, peine, brochas, esponja, reciclable">
+    <meta name="description" content="Descubrí nuestros productos de cosmética natural, vegana y ecológica">
+    c) Quiénes Somos
+    <meta name="keywords" content="pachamama, cosmética, natural, vegana, ecológica, salud, medioambiente, reutilizable, reciclable">
+    <meta name="description" content="Pachamama, te contamos quiénes somos">
+    d) FaQ
+    <meta name="keywords" content="pachamama, preguntas, respuestas, shampoo, acondicionador, solido, vegano, ecológico, natural">
+    <meta name="description" content="Preguntas Frecuentes de cosmética natural, vegana y ecológica">
+    e) Contacto
+    <meta name="keywords" content="pachamama, contacto, ayuda, cliente">
+    <meta name="description" content="Completá el formulario de contacto para recibir ayuda">
+
+4) H1 : Se verificó que todas las páginas tengan H1 y no se repitan dentro del mismo html.
+
+5) <strong> : Se utilizó la etiqueta para resaltar palabras claves en las secciones "FaQ" y "QuiénesSomos"
+
+6) Sitemap : Se incorporó un sitemap para el navegador. (https://www.xml-sitemaps.com/) 
+
+7) Se testeó Mobile friendly y arrojó resultado óptimo (https://search.google.com/test/mobile-friendly/result?id=kLm6F6OrRj19xkoOQHsccw)
+
+8) Se chequeó el estado de SEO en (https://seositecheckup.com/)

@@ -1,0 +1,115 @@
+.mainProductos {
+    background-image: url("https://d3ugyf2ht6aenh.cloudfront.net/stores/001/070/304/products/03-shiri1-46c59247bf3404383e16068387715475-1024-1024.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+
+    .prodsBackbround {
+        background-color: rgba(240, 255, 255, 0.662);
+
+        .titulos {
+            @include estiloH1(2.5rem);
+        }
+
+        .container.filter {
+            border-radius: 0%;
+
+            .row {
+                justify-content: center;
+
+                .card.filter {
+                    background-color: grey;
+                    padding: 6px;
+
+                    form {
+                        width: 16rem;
+                        width: none;
+                        padding: none;
+                        margin: none;
+                        background-color: #f4f3ee;
+
+                        input {
+                            text-align: center;
+                        }
+                    }
+
+                    button {
+                        background-color: white;
+                        width: 16rem;
+                        color: black;
+                    }
+
+                    .dropdown-menu {
+                        text-align: center;
+                        width: 16rem;
+                    }
+                }
+
+
+            }
+        }
+
+        .container {
+            .row {
+                justify-content: center;
+
+                .card {
+                    align-items: center;
+                    justify-content: center;
+                    padding: 17px;
+                    margin: 8px;
+                    background-color: #f4f3ee;
+
+                    h5 {
+                        font-weight: 600;
+                        color: #cb997e
+                    }
+
+                    .btnColor {
+                        background-color: #e58461;
+                        color: white;
+
+                        &:hover {
+                            background-color: black;
+                            color: #e58461;
+                        }
+                    }
+                }
+            }
+
+        }
+
+        .pages {
+            display: flex;
+            flex-direction: row;
+            align-content: center;
+            justify-content: center;
+            align-items: center;
+            margin: 15px;
+
+            p {
+                margin-right: 10px;
+                font-weight: 600;
+            }
+
+            button {
+                background-color: rgba(240, 255, 255, 0.662);
+                color: black;
+
+                &:hover {
+                    background-color: black;
+                    color: $RosaViejo;
+                }
+            }
+
+            i {
+                color: $RosaViejo;
+            }
+
+        }
+
+    }
+
+}

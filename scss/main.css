@@ -1,0 +1,378 @@
+@import url("https://fonts.googleapis.com/css2?family=Hind:wght@300;600;700&family=Montserrat:wght@300;600;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+header nav {
+  background-image: linear-gradient(to right, #e9e7da 70%, white);
+}
+header img {
+  width: 150px;
+  padding: 5px;
+}
+header .nav-link {
+  color: #cb997e;
+}
+header .nav-link:hover {
+  color: #e58461;
+  font-weight: bold;
+}
+
+.footer {
+  background-color: #e9e7da;
+  background-color: black;
+  color: #a4755b;
+  color: rgb(255, 210, 204);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "footer__envios footer__mediosPago footer__sitioSeguro footer__muestras" "footer__rrss footer__rrss footer__copyright footer__copyright ";
+}
+.footer h3 {
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 200;
+  margin: 20px auto;
+}
+.footer .footer__rrss {
+  grid-area: footer__rrss;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer .footer__rrss i {
+  color: rgb(85, 85, 85);
+  color: #e58461;
+  margin: 10px;
+  font-size: 2.5rem;
+}
+.footer .footer__rrss i:hover {
+  color: white;
+  font-weight: bold;
+  font-size: 3rem;
+}
+.footer .footer__copyright {
+  grid-area: footer__copyright;
+  color: rgb(85, 85, 85);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer .footer__copyright h4 {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+@media (max-width: 740px) {
+  .footer {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "footer__envios" "footer__mediosPago" "footer__sitioSeguro" "footer__muestras" "footer__rrss" "footer__copyright";
+  }
+}
+.mainIndex {
+  min-height: 65vh;
+  background-image: url("https://d3ugyf2ht6aenh.cloudfront.net/stores/001/070/304/themes/idea/slide-1606843316359-4482945457-e667eabb42cae97dc7e4c9348ff1a0471606843329.jpg?886905166");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.mainIndex .indexBackbround {
+  background-color: rgba(240, 255, 255, 0.5882352941);
+  height: 65vh;
+  padding: 10px;
+}
+.mainIndex .indexBackbround .indexTitulos {
+  display: flex;
+  text-align: center;
+  height: 55vh;
+  flex-direction: column;
+  justify-content: center;
+}
+.mainIndex .indexBackbround .indexTitulos h1 {
+  font-size: 2.5rem;
+  padding: 10px;
+  color: #e58461;
+  font-weight: bold;
+  text-align: center;
+}
+.mainIndex .indexBackbround .indexTitulos h1:hover {
+  transform: skew(-10deg);
+  font-size: 3rem;
+  transition: 4s;
+}
+.mainIndex .indexBackbround .indexTitulos h2 {
+  padding: 10px;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.mainIndex .indexBackbround .indexTitulos h2 .animate__heartBeat {
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+}
+
+@media (max-width: 740px) {
+  .mainIndex {
+    min-height: 50vh;
+  }
+}
+.mainProductos {
+  background-image: url("https://d3ugyf2ht6aenh.cloudfront.net/stores/001/070/304/products/03-shiri1-46c59247bf3404383e16068387715475-1024-1024.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+}
+.mainProductos .prodsBackbround {
+  background-color: rgba(240, 255, 255, 0.662);
+}
+.mainProductos .prodsBackbround .titulos {
+  font-size: 2.5rem;
+  padding: 10px;
+  color: #e58461;
+  font-weight: bold;
+  text-align: center;
+}
+.mainProductos .prodsBackbround .container.filter {
+  border-radius: 0%;
+}
+.mainProductos .prodsBackbround .container.filter .row {
+  justify-content: center;
+}
+.mainProductos .prodsBackbround .container.filter .row .card.filter {
+  background-color: grey;
+  padding: 6px;
+}
+.mainProductos .prodsBackbround .container.filter .row .card.filter form {
+  width: 16rem;
+  width: none;
+  padding: none;
+  margin: none;
+  background-color: #f4f3ee;
+}
+.mainProductos .prodsBackbround .container.filter .row .card.filter form input {
+  text-align: center;
+}
+.mainProductos .prodsBackbround .container.filter .row .card.filter button {
+  background-color: white;
+  width: 16rem;
+  color: black;
+}
+.mainProductos .prodsBackbround .container.filter .row .card.filter .dropdown-menu {
+  text-align: center;
+  width: 16rem;
+}
+.mainProductos .prodsBackbround .container .row {
+  justify-content: center;
+}
+.mainProductos .prodsBackbround .container .row .card {
+  align-items: center;
+  justify-content: center;
+  padding: 17px;
+  margin: 8px;
+  background-color: #f4f3ee;
+}
+.mainProductos .prodsBackbround .container .row .card h5 {
+  font-weight: 600;
+  color: #cb997e;
+}
+.mainProductos .prodsBackbround .container .row .card .btnColor {
+  background-color: #e58461;
+  color: white;
+}
+.mainProductos .prodsBackbround .container .row .card .btnColor:hover {
+  background-color: black;
+  color: #e58461;
+}
+.mainProductos .prodsBackbround .pages {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  margin: 15px;
+}
+.mainProductos .prodsBackbround .pages p {
+  margin-right: 10px;
+  font-weight: 600;
+}
+.mainProductos .prodsBackbround .pages button {
+  background-color: rgba(240, 255, 255, 0.662);
+  color: black;
+}
+.mainProductos .prodsBackbround .pages button:hover {
+  background-color: black;
+  color: #e58461;
+}
+.mainProductos .prodsBackbround .pages i {
+  color: #e58461;
+}
+
+.quienesSomos {
+  background-image: url("https://d3ugyf2ht6aenh.cloudfront.net/stores/001/070/304/themes/idea/slide-1606843316359-4482945457-e667eabb42cae97dc7e4c9348ff1a0471606843329.jpg?886905166");
+  background-size: cover;
+}
+.quienesSomos .qsBackbround {
+  background-color: rgba(240, 255, 255, 0.662);
+}
+.quienesSomos .qsBackbround .titulos {
+  font-size: 2.5rem;
+  padding: 10px;
+  color: #e58461;
+  font-weight: bold;
+  text-align: center;
+}
+.quienesSomos .qsBackbround .col {
+  background-color: rgba(233, 231, 218, 0.462745098);
+  margin: 10px 5px;
+  padding: 10px 8px;
+}
+.quienesSomos .qsBackbround .col .fa-seedling,
+.quienesSomos .qsBackbround .col .fa-recycle,
+.quienesSomos .qsBackbround .col .fa-earth-americas {
+  font-size: 4rem;
+}
+.quienesSomos .qsBackbround .col p {
+  text-align: center;
+  line-height: 2;
+  padding: 10px 66px;
+}
+.quienesSomos .qsBackbround .col h2 {
+  color: #e58461;
+  font-weight: 600;
+}
+.quienesSomos .qsBackbround .col iframe {
+  width: 560px;
+  height: 315px;
+}
+
+@media (max-width: 640px) {
+  iframe {
+    max-width: 100%;
+  }
+}
+.mainFaq {
+  background-image: url("https://d3ugyf2ht6aenh.cloudfront.net/stores/001/070/304/products/55-shiri21-8e7f759a65d675b49f16068384488485-1024-1024.jpg");
+  background-size: cover;
+}
+.mainFaq .faqBackground {
+  background-color: rgba(240, 255, 255, 0.696);
+}
+.mainFaq .faqBackground .titulos {
+  font-size: 2.5rem;
+  padding: 10px;
+  color: #e58461;
+  font-weight: bold;
+  text-align: center;
+}
+.mainFaq .faqBackground .container.text-center .row .col {
+  background-color: rgba(233, 231, 218, 0.462745098);
+  margin: 10px 5px;
+  padding: 10px 8px;
+}
+.mainFaq .faqBackground .container.text-center .row .col h2 {
+  margin: 10px 5px;
+  padding: 10px;
+  text-align: center;
+}
+.mainFaq .faqBackground .container.text-center .row .col h2:hover {
+  font-size: 2rem;
+  transition: 2s;
+  color: #e58461;
+  font-weight: 600;
+}
+.mainFaq .faqBackground .container.text-center .row .col p {
+  padding: 10px;
+  text-align: center;
+}
+.mainFaq .faqBackground .container.text-center .row .col .fa-heart,
+.mainFaq .faqBackground .container.text-center .row .col .fa-hands-bubbles,
+.mainFaq .faqBackground .container.text-center .row .col .fa-soap,
+.mainFaq .faqBackground .container.text-center .row .col .fa-credit-card,
+.mainFaq .faqBackground .container.text-center .row .col .fa-truck {
+  font-size: 3rem;
+}
+.mainFaq .faqBackground .container.text-center .row .col ul {
+  list-style: none;
+  display: flex;
+  margin-top: 15px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.mainFaq .faqBackground .container.text-center .row .col ul img {
+  width: 4rem;
+  margin: 5px;
+}
+
+@media (max-width: 740px) {
+  .faqBackground .row {
+    flex-direction: column;
+  }
+}
+.mainContacto {
+  background-image: url("https://d3ugyf2ht6aenh.cloudfront.net/stores/001/070/304/products/sorbete-aluminio1-836ec43b0fe50a332515730477862939-1024-1024.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.mainContacto .contactoBackground {
+  background-color: rgba(240, 255, 255, 0.844);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.mainContacto .contactoBackground .titulos {
+  font-size: 2.5rem;
+  padding: 10px;
+  color: #e58461;
+  font-weight: bold;
+  text-align: center;
+}
+.mainContacto .contactoBackground p {
+  margin: 8px 160px;
+  padding: 10px;
+  text-align: center;
+  font-size: 120%;
+  color: black;
+}
+.mainContacto .contactoBackground form {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  resize: none;
+}
+.mainContacto .contactoBackground form input,
+.mainContacto .contactoBackground form textarea {
+  margin: 8px 160px;
+  padding: 10px;
+  text-align: center;
+  font-size: 120%;
+}
+.mainContacto .contactoBackground form a.btn.btnColor {
+  margin: 8px 160px;
+  padding: 10px 130px;
+  font-size: 120%;
+  background-color: #e58461;
+  color: white;
+}
+.mainContacto .contactoBackground form a.btn.btnColor:hover {
+  background-color: black;
+  color: #e58461;
+}
+
+@media (max-width: 740px) {
+  .mainContacto .contactoBackground form {
+    width: 90%;
+  }
+  .mainContacto .contactoBackground form .form-control {
+    width: 90%;
+  }
+}/*# sourceMappingURL=main.css.map */

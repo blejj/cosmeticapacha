@@ -1,0 +1,49 @@
+
+.mainIndex {
+    min-height: 65vh;
+    background-image: url("https://d3ugyf2ht6aenh.cloudfront.net/stores/001/070/304/themes/idea/slide-1606843316359-4482945457-e667eabb42cae97dc7e4c9348ff1a0471606843329.jpg?886905166");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;    
+
+    .indexBackbround {
+        background-color: #f0ffff96;
+        height: 65vh;
+        padding: 10px;
+
+        .indexTitulos {
+            display: flex;
+            text-align: center;
+            height: 55vh;
+            flex-direction: column;
+            justify-content: center;
+
+            h1 {
+                @include estiloH1(2.5rem);
+
+                &:hover {
+                    transform: skew(-10deg);
+                    font-size: 3rem;
+                    transition: 4s;
+                }
+            }
+
+            h2 {
+                padding: 10px;
+                font-size: 2rem;
+                font-weight: bold;
+
+                .animate__heartBeat {
+                    animation-duration: 10s;
+                }
+            }
+        }
+    }
+}
+
+//Tamaño Mediano
+@media(max-width: 740px) {
+    .mainIndex {
+        min-height: 50vh;
+    }
+}

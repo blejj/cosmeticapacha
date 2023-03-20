@@ -1,0 +1,71 @@
+.mainFaq {
+    background-image: url('https://d3ugyf2ht6aenh.cloudfront.net/stores/001/070/304/products/55-shiri21-8e7f759a65d675b49f16068384488485-1024-1024.jpg');
+    background-size: cover;
+
+    .faqBackground {
+        background-color: rgba(240, 255, 255, 0.696);
+
+        .titulos {
+            @include estiloH1(2.5rem);
+        }
+
+        .container.text-center {
+            .row {
+                .col {
+                    background-color: #e9e7da76;
+                    margin: 10px 5px;
+                    padding: 10px 8px;
+
+                    h2 {
+                        margin: 10px 5px;
+                        padding: 10px;
+                        text-align: center;
+
+                        &:hover {
+                            font-size: 2rem;
+                            transition: 2s;
+                            color: $RosaViejo;
+                            font-weight: 600;
+
+                        }
+                    }
+
+                    p {
+                        padding: 10px;
+                        text-align: center;
+                    }
+
+                    .fa-heart,
+                    .fa-hands-bubbles,
+                    .fa-soap,
+                    .fa-credit-card,
+                    .fa-truck {
+                        font-size: 3rem;
+                    }
+
+                    ul {
+                        list-style: none;
+                        display: flex;
+                        margin-top: 15px;
+                        flex-wrap: wrap;
+                        justify-content: center;
+
+                        img {
+                            width: 4rem;
+                            margin: 5px;
+                        }
+                    }
+
+                }
+            }
+        }
+
+    }
+}
+
+
+@media(max-width: 740px) {
+    .faqBackground .row {
+        flex-direction: column;
+    }
+}
